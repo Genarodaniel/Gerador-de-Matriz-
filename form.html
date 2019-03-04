@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Gerador de grafos</title>
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/grafo.js" type="text/javascript" charset="utf-8"></script>
+<script src="css/grafo.css" type="text/css" charset="utf-8" ></script>
+<link rel="stylesheet" href="css/grafo.css" type="text/css">
+</head>
+<body>
+	<div class="container">
+		<div class="box">
+	<form name ="form_graph" class ="form-horizontal"action="?act=save" method="get" accept-charset="utf-8">
+	<fieldset>
+	<div class="form-group">
+	<div class ="col-sm-4">
+
+	<label class="form-control" for ="graph_type">Tipo de Grafo
+	<select name="graph_type" id="graph_type" onblur="" class="form-control" class="form-control">
+			<option value="Grafo">Grafo</option>
+			<option value="Digrafo">Digrafo</option>
+		</select></label>
+	</div>
+	<div class="col-sm-4">
+		<label class=" form-control" for="qtde_v">Quantidade de vértices: 
+		<input id ="qtde_v"type="number" name="qtde_v" value="" class="form-control">
+	</label></div>
+
+	<div class="col-sm-4">
+		
+		<label class=" form-control" for = "qtde_a">Quantidade de Arestas:
+		<input  type="number" id="qtde_a" name="qtde_a" value="" class="form-control" onblur="valida_tipo();">
+ </label></div>
+	
+	<div class="col-sm-4">
+	<button type="submit" class="btn-success">Enviar</button>
+</div>
+</fieldset>
+	</form>
+</div></div>
+<!--
+	<?php/*
+	$nome=isset($_GET["name"])?$_GET["name"]:"[Não informado]";
+	$ano=isset($_GET["date"])?$_GET["date"]:null;
+	$sexo=isset($_GET["sex"])?$_GET["sex"]:"[Não informado]";
+
+	if(is_null($ano)){
+		$ano="[nao informado]";
+		$data="[nao informado]";
+	}else{
+		$data=date("Y")-$ano;
+	}
+
+	var $cliente;
+
+	echo "O cliente: $nome". "</br> Nascido em: $ano</br>"."possui : $data"." anos". "</br>Seu sexo é: $sexo";
+	*/?>
+
+
+	div id="input_grafo">
+		<p>Qual será o tipo a ser examinado<input type="number" name="type" id="type" placeholder="1 para grafo 2 para Digrafo"></p>
+		<p> Qual será o grau do grafo a ser examinado</p>
+		<p>Digite a quantidade de vértices: <input type="number" name="vert" placeholder=""></p>
+
+	</div>
+
+-->
+
+
+
+
+</meta>
+</html>

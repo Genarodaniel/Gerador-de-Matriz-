@@ -1,0 +1,23 @@
+	.container {
+         display: flex;
+         justify-content: center;
+         align-items:center;
+     }
+     .box {
+         width: 100%;
+         height: 100%;
+         background: #fff;
+     }
+     .col-sm-4{
+     	display: flex;
+     	justify-content: center;
+     	background:green;
+     }
+     .swal-footer{
+     	text-align: center!important;
+     }
+     body{background-color: #000}
+     .form-horizontal{
+	background-color: #000;
+     }
+    
