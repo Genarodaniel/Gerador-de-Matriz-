@@ -12,6 +12,7 @@
      	display: flex;
      	justify-content: center;
      	background:green;
+     	padding-top:13px;
      }
      .swal-footer{
      	text-align: center!important;
@@ -19,5 +20,12 @@
      body{background-color: #000}
      .form-horizontal{
 	background-color: #000;
+     }
+     .col-sm-3{
+     	display: inline-block;
+     	background: green;
+     	margin-top:10px;
+     	margin-right:10px;
+     	padding-top:13px;
      }
     
