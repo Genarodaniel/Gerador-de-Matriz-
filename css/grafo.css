@@ -49,12 +49,21 @@
    	height:50px;
    	padding:0;
    }
+
    .form-control{
    	text-align:center;
    }
+
    #sm-8_inputs{
    	border:none;
    }
+
    #div_inputs{
    width:800px;
-   }
+}
+
+.form-control{
+	text-align-last: center;
+	padding-right: 29px;
+}
+  
