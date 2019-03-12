@@ -23,9 +23,38 @@
      }
      .col-sm-3{
      	display: inline-block;
-     	background: green;
      	margin-top:10px;
      	margin-right:10px;
      	padding-top:13px;
+     	border:4px solid green;
+     	color:gold;
+     	text-align:center;
+     	font-size:15px;
      }
     
+    .col-sm-16 {
+   	display: flex;
+   	margin: 0 auto;
+   }
+   .col-sm-8 {
+   	margin:0 auto;
+   	margin-top:40px;
+   	padding-top:35px;
+    height: 361px;
+    border:4px solid green;
+   }
+  .btn-success {
+   	margin: 0 auto;
+   	border:crimson;
+   	height:50px;
+   	padding:0;
+   }
+   .form-control{
+   	text-align:center;
+   }
+   #sm-8_inputs{
+   	border:none;
+   }
+   #div_inputs{
+   width:800px;
+   }

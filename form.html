@@ -17,20 +17,22 @@
 	<form name ="form_graph" class ="form-horizontal"action="grafo.php" method="post" accept-charset="utf-8">
 	<fieldset>
 	<div class="form-group">
-	<div class ="col-sm-4">
 
+
+	<div class ="col-sm-8">
+    <div class="div_form">
 	<label class="form-control" for ="graph_type">Tipo de Grafo
 	<select name="graph_type" id="graph_type" onblur="" class="form-control" class="form-control">
 			<option value="1">Grafo</option>
 			<option value="2">Digrafo</option>
 		</select></label>
 	</div>
-	<div class="col-sm-4">
+	<div class="div_form">
 		<label class=" form-control" for="qtde_v">Quantidade de vértices: 
 		<input id ="qtde_v"type="number" name="qtde_v" value="" class="form-control">
 	</label></div>
 
-	<div class="col-sm-4">
+	<div class="div_form">
 		
 		<label class=" form-control" for = "qtde_a">Quantidade de Arestas:
 		<input  type="number" id="qtde_a" name="qtde_a" value="" class="form-control" onblur="valida_tipo();clearDiv('div_inputs');geraInputs();">
@@ -38,17 +40,17 @@
 
 
 </div>
-	<div class="col-sm-4">
-	<button type="submit" class="btn-success">Enviar</button>
+	<div class="col-sm-16">
+	<button type="submit" class="btn-success col-sm-8">Enviar</button>
 </div>
-</fieldset>
+</fieldset><div class="col-sm-8" id="sm-8_inputs">
 	<div id="div_inputs" class="form-horizontal" >
 		<div class="col-sm-10" id = "div"></div>
 	
 </div></form>
 
 
-</div></div>
+</div></div></div>
 <!--
 	<?php/*
 	$nome=isset($_GET["name"])?$_GET["name"]:"[Não informado]";

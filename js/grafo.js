@@ -28,6 +28,23 @@ function valida_tipo(){
 			document.getElementById(element_id).innerHTML ="";
 		}
 
+		function verifica_ori_des(){
+			var qtde_v_field =document.getElementById('qtde_v');
+			var graph_type_field = document.getElementById('graph_type');
+			var qtde_a_field = document.getElementById('qtde_a');
+			var max_a;
+			var qtde_a = qtde_a_field.value;
+			var qtde_v = qtde_v_field.value;
+			var graph_type= graph_type_field.value;
+
+			for (var i= 0; i <qtde_a; i++){
+				var origin_field =document.getElementById('origin'+i);
+				var destiny_field = document.getElementById('graph_type'+i);
+				
+			}
+
+		}
+
 function geraInputs(){
 	var qtde_v_field =document.getElementById('qtde_v');
 		var graph_type_field = document.getElementById('graph_type');
@@ -36,10 +53,6 @@ function geraInputs(){
 		var qtde_a = qtde_a_field.value;
 		var qtde_v = qtde_v_field.value;
 		var graph_type= graph_type_field.value;
-
-
-
-
 	for (var i = 0; i < qtde_a; i++) {
 		var OriginBox = document.createElement("input");
 		var DestinyBox = document.createElement("input");
@@ -48,6 +61,7 @@ function geraInputs(){
 		var div = document.createElement("div");
 		var OriginTxt = document.createTextNode("Origem da aresta "+(i+1)+" :");
 		var DestinyTxt = document.createTextNode("Destino da aresta "+(i+1)+" :");
+		var aresta = document.createTextNode("ARESTA Nº "+(i+1)+"");
 
 		OriginBox.setAttribute("type", "number");
 		DestinyBox.setAttribute("type", "number");
@@ -76,12 +90,14 @@ function geraInputs(){
 		OriginBox.setAttribute("value", "");
 		DestinyBox.setAttribute("value", "");
 		document.getElementById("div_inputs").appendChild(div);
+		div.appendChild(aresta);
 		div.appendChild(LabelOriBox);
 		div.appendChild(LabelDesBox);
 		LabelOriBox.appendChild(OriginTxt);
 		LabelDesBox.appendChild(DestinyTxt);
 		LabelOriBox.appendChild(OriginBox); 
 		LabelDesBox.appendChild(DestinyBox); 
+		
 		
 }
 	}

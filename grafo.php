@@ -6,7 +6,7 @@ $qtde_v = isset($_POST["qtde_v"]) ? $_POST["qtde_v"] : null;
 $qtde_a = isset($_POST["qtde_a"]) ? $_POST["qtde_a"] : null;
 $graph_type = isset($_POST["graph_type"]) ? $_POST["graph_type"] : null;
 
-digrafo($qtde_v, $qtde_a, $graph_type);
+chama($qtde_v, $qtde_a, $graph_type);
 
 function geraMatrizGrafo() {
 
@@ -43,7 +43,7 @@ function imprime($array, $qtde_v) {
 
 }
 
-function digrafo($qtde_v, $qtde_a, $graph_type) {
+function chama($qtde_v, $qtde_a, $graph_type) {
 	if ($graph_type == 1) {
 
 	} elseif ($graph_type == 2) {
