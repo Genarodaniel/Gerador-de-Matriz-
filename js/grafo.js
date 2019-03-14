@@ -9,20 +9,26 @@ function valida_tipo(){
 		var qtde_a = qtde_a_field.value;
 		var qtde_v = qtde_v_field.value;
 		var graph_type= graph_type_field.value;
+		
 
 		if(graph_type == "1"){
-			if(qtde_a > qtde_v*qtde_v){
+			
 				console.log('chegou');
 				swal({
 					title: "Erro",
-					Number: "quantidade de vértices elevado",
+					text: "quantidade de vértices elevado",
 					icon: "error",
-				});
-			
-				}
-			}
-
+				},
+				
+				
+		  		 );
+		document.getElementById('div_inputs').innerHTML ="";
 		}
+
+}
+			
+
+	
 
 		function clearDiv(element_id){
 			document.getElementById(element_id).innerHTML ="";

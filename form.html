@@ -35,19 +35,21 @@
 	<div class="div_form">
 		
 		<label class=" form-control" for = "qtde_a">Quantidade de Arestas:
-		<input  type="number" id="qtde_a" name="qtde_a" value="" class="form-control" onblur="valida_tipo();clearDiv('div_inputs');geraInputs();">
+		<input  type="number" id="qtde_a" name="qtde_a" value="" class="form-control" onblur="clearDiv('div_inputs');geraInputs();">
+
  </label>
 
 
 </div>
 	<div class="col-sm-16">
 	<button type="submit" class="btn-success col-sm-8">Enviar</button>
+	
 </div>
 </fieldset><div class="col-sm-8" id="sm-8_inputs">
 	<div id="div_inputs" class="form-horizontal" >
 		<div class="col-sm-10" id = "div"></div>
 	
-</div></form>
+</div></form><button class="btn-success col-sm-8" onclick="valida_tipo()">Validar campos</button>
 
 
 </div></div></div>
